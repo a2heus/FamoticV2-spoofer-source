@@ -1,0 +1,172 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Enigma Free Form - Tazz</AssemblyName>
+    <RootNamespace>Enigma_Free_Form___Tazz</RootNamespace>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Enigma_Free_Form___Tazz.Program</StartupObject>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Collections">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.32\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.HttpListener">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.ServicePoint">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.ServicePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebClient">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.WebClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.NETCore.App\6.0.32\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.32\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.Primitives">
+      <HintPath>..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.32\System.Windows.Forms.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="-Module-.cs" />
+    <Compile Update="Costura\AssemblyLoader.cs" />
+    <Compile Update="Enigma Free Form - Tazz_ProcessedByFody.cs" />
+    <Compile Update="Enigma_Free_Form___Tazz\ApplicationConfiguration.cs" />
+    <Compile Update="Enigma_Free_Form___Tazz\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Enigma_Free_Form___Tazz\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Enigma_Free_Form___Tazz\Forms\Spoofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Enigma_Free_Form___Tazz\Forms\Spoofer.Designer.cs">
+      <DependentUpon>Spoofer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Enigma_Free_Form___Tazz\Program.cs" />
+    <Compile Update="Enigma_Free_Form___Tazz\Properties\Resources.cs" />
+    <Compile Update="KeyAuth\api.cs" />
+    <Compile Update="KeyAuth\encryption.cs" />
+    <Compile Update="KeyAuth\json_wrapper.cs" />
+    <Compile Update="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Update="Properties\AssemblyInfo.cs" />
+    <Compile Update="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Update="System\Runtime\CompilerServices\NullableContextAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Costura\costura\dll.compressed" />
+    <EmbeddedResource Update="Costura\costura\pdb.compressed" />
+    <EmbeddedResource Update="Costura\guna\ui2\dll.compressed" />
+    <EmbeddedResource Update="Costura\metadata" />
+    <EmbeddedResource Update="Costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Update="Costura\system\management\dll.compressed" />
+    <EmbeddedResource Update="Enigma_Free_Form___Tazz\Form1.resources" />
+    <EmbeddedResource Update="Enigma_Free_Form___Tazz\Forms\Spoofer.resources" />
+    <EmbeddedResource Update="Enigma_Free_Form___Tazz\Properties\Resources.resources" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+
+</Project>
